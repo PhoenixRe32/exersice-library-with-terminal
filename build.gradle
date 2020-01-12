@@ -33,3 +33,11 @@ jar {
         attributes 'Main-Class': 'com.sky.Application'
     }
 }
+
+task done(type: Zip) {
+    dependsOn "build"
+    from "./"
+    include "*/**"
+    exclude("build", "gradle", ".**")
+    archiveFileName = "sky-library-${System.env.USER}.zip"
+}
