@@ -9,6 +9,7 @@ import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doReturn;
 
 import com.sky.library.Book;
+import com.sky.library.BookNotFoundException;
 import com.sky.library.BookRepository;
 import com.sky.library.BookService;
 import junitparams.JUnitParamsRunner;

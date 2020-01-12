@@ -1,4 +1,4 @@
-package com.sky.library.client;
+package com.sky.library.children.client;
 
 import static java.lang.String.format;
 import static java.nio.charset.StandardCharsets.UTF_8;
@@ -7,9 +7,9 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 import com.sky.library.BookService;
-import com.sky.library.children.BookNotFoundException;
+import com.sky.library.BookNotFoundException;
 
-public class Console {
+public class ChildrenConsole {
 
     private static final Pattern SPACES = Pattern.compile("\\s+");
     static final String BOOK = "book";
@@ -36,7 +36,7 @@ public class Console {
     private final Scanner scanner;
     private final BookService bookService;
 
-    public Console(BookService bookService) {
+    public ChildrenConsole(BookService bookService) {
         this.bookService = bookService;
         scanner = new Scanner(System.in, UTF_8);
     }

@@ -8,6 +8,7 @@ import static org.junit.Assert.assertThrows;
 import java.util.logging.Logger;
 
 import com.sky.library.Book;
+import com.sky.library.BookNotFoundException;
 import com.sky.library.BookService;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;

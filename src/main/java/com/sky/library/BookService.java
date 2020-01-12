@@ -5,8 +5,6 @@ package com.sky.library;
  * Please do not make your solution publicly available in any way e.g. post in forums or commit to GitHub.
  */
 
-import com.sky.library.children.BookNotFoundException;
-
 public interface BookService {
 
     Book retrieveBook(String bookReference) throws BookNotFoundException;

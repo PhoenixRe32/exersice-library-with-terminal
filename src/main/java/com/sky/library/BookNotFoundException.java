@@ -1,4 +1,4 @@
-package com.sky.library.children;
+package com.sky.library;
 
 /*
  * Copyright © 2015 Sky plc All Rights reserved.
@@ -6,6 +6,7 @@ package com.sky.library.children;
  */
 
 public class BookNotFoundException extends Exception {
+
     private static final long serialVersionUID = 5631382140822892472L;
 
     public BookNotFoundException(String message) {

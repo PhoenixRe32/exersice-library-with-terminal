@@ -1,8 +1,10 @@
-package com.sky.library;
+package com.sky;
 
+import com.sky.library.BookRepository;
+import com.sky.library.BookService;
 import com.sky.library.children.ChildrenBookRepository;
 import com.sky.library.children.ChildrenBookService;
-import com.sky.library.client.Console;
+import com.sky.library.children.client.ChildrenConsole;
 
 public final class Application {
 
@@ -13,8 +15,8 @@ public final class Application {
     public static void main(String[] args) {
         BookRepository bookRepository = new ChildrenBookRepository();
         BookService bookService = new ChildrenBookService(bookRepository);
-        Console console = new Console(bookService);
+        ChildrenConsole childrenConsole = new ChildrenConsole(bookService);
 
-        console.start();
+        childrenConsole.start();
     }
 }

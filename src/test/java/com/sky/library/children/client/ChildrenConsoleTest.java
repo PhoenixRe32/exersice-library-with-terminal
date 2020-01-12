@@ -1,11 +1,11 @@
-package com.sky.library.client;
+package com.sky.library.children.client;
 
-import static com.sky.library.client.Console.BOOK;
-import static com.sky.library.client.Console.SUMMARY;
+import static com.sky.library.children.client.ChildrenConsole.BOOK;
+import static com.sky.library.children.client.ChildrenConsole.SUMMARY;
 import static org.mockito.Mockito.verify;
 
 import com.sky.library.BookService;
-import com.sky.library.children.BookNotFoundException;
+import com.sky.library.BookNotFoundException;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -13,7 +13,7 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
-public class ConsoleTest {
+public class ChildrenConsoleTest {
 
     @Rule
     public MockitoRule rule = MockitoJUnit.rule();
@@ -21,11 +21,11 @@ public class ConsoleTest {
     @Mock
     private BookService bookService;
 
-    private Console classUnderTest;
+    private ChildrenConsole classUnderTest;
 
     @Before
     public void setup() {
-        classUnderTest = new Console(bookService);
+        classUnderTest = new ChildrenConsole(bookService);
     }
 
     @Test
